@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./pexels-humphrey-jonesbehan-1216475.jpg);
+    background-size: cover;
+     background-position: center;
+    color: white;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+ 
+}
+p{
+    font-size: 20px;
+}
+.newyear{
+    font-size: 50px;
+    margin-top: 30px;
+    font-family: 'Inspiration', cu;
+}
+.box{
+    width: 50px;
+    text-align: center;
+    height: 50px;
+   border: 1px solid white  
+}
+.box h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.box small{
+    width: 10px;
+}
+@media(min-width:576px){
+    body{
+        background-position: center;
+    }
+    .newyear{
+        font-size: 60px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .box h2{
+        font-size: 30px;
+    }
+    .box{
+        width: 70px;
+        height: 70px;
+    }
+    .box small{
+        width: 20px;
+    }
+}
+@media(min-width:768px){
+    body{
+        background-position: center;
+    }
+    .newyear{
+        font-size: 100px;
+    }p{
+        font-size: 20px;
+    }
+    .box h2{
+        font-size: 40px;
+    }
+    .box{
+        width: 80px;
+        height: 80px;
+    }
+    .box small{
+        width: 30px;
+    }
+}
