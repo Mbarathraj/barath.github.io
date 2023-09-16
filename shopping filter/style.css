@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#34495e;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    min-height: 700px;
+    display: flex;
+}
+.sidebar{
+  flex: 1;
+  background-color:#ecf0f1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li{
+  
+    padding-left: 10px;
+    margin: 10px 0px;
+}
+.sidebar ul li:hover{
+    background-color:#bdc3c7 ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.content{
+flex: 4;
+}
+.sidebar h3{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px ;
+}
+.search1{
+    display: flex;
+  width: 100%;
+    border: 1px solid gray;
+    padding: 2px;
+    position: relative;
+    border-radius: 20px;
+}
+.search1 input{
+    background-color: unset;
+    border: none;
+    outline: none;
+   margin-left: 20px;
+   border-radius: 20px;
+   padding: 5px;
+   
+}
+.search1 #icon{
+    padding: 4px;
+    position: absolute;
+}
+.products{
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   justify-content: center;
+}
+.product .pic{
+    flex: 1;
+}
+
+.product .pic .img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transform: scale(0.75);
+    transition: 1s;
+}
+.product:hover .pic .img{
+    transform: scale(1);
+}
+.product{
+    display: flex;
+    flex-direction: column;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   width: 150px;
+cursor: pointer;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+.product-details span{
+    font-size: 12px;
+}
+#menu{
+    display: none;
+}
+#close{
+    position: absolute;
+    font-size: 1.5rem;
+    transition: 1s;
+   visibility: hidden;
+    cursor: pointer;
+}
+#nota{
+    font-size: 2rem;
+}
+.refresh{
+    display: none;
+}
+@media (max-width:650px){
+    .product .pic .img{
+        width: 130px;
+        height: 130px;
+        object-fit: contain;
+    }
+    .products{
+        margin-top: 50px;
+    }
+    .product{
+        width: 130px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #menu{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .search{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .search1{
+        width: 200px;
+    }
+    .menu-content{
+      display: none;
+    }
+    
+   
+}

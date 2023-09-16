@@ -1,0 +1,19 @@
+
+   <div class="cart-content">
+    <img src="./delicious-indian-food-tray.jpg" alt="">
+    <div class="detail-box">
+        <div class="food-name">
+            Chappati with Meal 
+        </div>
+        <div class="price-box">
+            <div class="food-price">Price:100</div>
+            <div class="cart-amt">Total:100</div>
+        </div>
+        <label for="cart-quantity">Quantity:</label>
+        <input type="number" name="" id="" value="1" class="cart-quantity">
+        <ion-icon name="trash-outline" id="del"></ion-icon>
+        <br>
+        <button class="buy">buy</button>
+    </div>
+   
+</div>

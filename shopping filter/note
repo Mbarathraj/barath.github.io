@@ -1,0 +1,10 @@
+ <div class="product">
+    <div class="pic">
+        <img src="https://m.media-amazon.com/images/I/617eiZeFtNL._SL1500_.jpg" alt="" class="img">
+    </div>
+    <div class="product-details">
+        <span class="product-Name">Product Name</span>
+        <span class="amt">Rs.8000</span>
+        <span class="seller">ABC Company</span>
+     </div>
+</div>

@@ -1,0 +1,152 @@
+*
+{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: red;
+}
+.container{
+    width: 700px;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid red;
+    margin-bottom: 20px;
+}
+#month{
+    font-size: 30px;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+}
+#btnback{
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 30px;
+    border: none;
+    top: 0;
+    left: 0;
+    font-size: 17px;
+    padding: 5px;
+    background-color: unset;
+}
+#btnext{
+    position: absolute;
+    background-color: unset;
+    border: none;
+    font-size: 17px;
+     height: 100%;
+     padding: 5px;
+     width: 30px;
+    right: 0;
+}
+.header #btnback:active
+{
+    transform: translateX(-3px)
+}
+.header #btnext:active
+{
+    transform: translateX(3px)
+}
+.weekdays{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+   height: 30px;
+}
+.calender{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.day{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.day:hover{
+    background-color: aliceblue;
+}
+#cday{
+    background-color: rgb(204, 127, 255);
+    color: white;
+}
+.event{
+    text-align: center;
+    overflow: hidden;
+}
+.plain{
+    cursor: default;
+    pointer-events: none;
+}
+.model,.model1{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    padding: 0;
+    display: none;
+}
+.model-items,.model-items1{
+    width: 400px;
+    border: 1px solid white;
+    padding: 50px;
+    position: relative;
+   
+}
+.close,.close1{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color:cadetblue;
+    cursor: pointer;
+}
+.model input{
+  padding: 7px;
+  width: 250px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+.model button,.model1 button{
+    padding: 7px;
+    background-color: rgb(71, 230, 57);
+    color: white;
+    border: none;
+    margin-right: 10px;
+    width: 70px;
+    text-align: center;
+}
+.model1 button{
+    background-color: red;
+    margin-left: 10px;
+
+}

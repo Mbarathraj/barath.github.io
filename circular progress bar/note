@@ -1,0 +1,12 @@
+ <div class="progress-bar">
+        <div class="circular-progress">
+            <span id="value">50%</span>
+        </div>
+        <label for="" id="text">HTML</label>
+    </div>
+        <div class="progress-bar">
+        <div class="circular-progress">
+            <span id="value">50%</span>
+        </div>
+        <label for="" id="text">HTML</label>
+    </div>
