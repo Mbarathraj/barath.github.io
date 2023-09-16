@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-bar{
+    list-style: none;
+}
+.nav-bar li{
+    display: inline-flex;
+}
+.nav-bar li a{
+text-decoration: none;
+padding: 7px;
+color: rgb(15, 217, 106);
+
+}
+.nav-bar li a:hover{
+    color: black;
+}
+.nav-bar  a.active{
+    background-color: red;
+    color:white;
+    transition: 0.9s;
+    transform: perspective(100px) rotatey(20deg);
+    
+}
+.content{
+    display: none;
+}
+.content.conactive{
+    margin-top: 10px;
+    display: block;
+}
