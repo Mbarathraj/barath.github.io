@@ -1,0 +1,27 @@
+.faq-container{
+    width: 300px;
+    border: 1px solid black;
+    position: relative;
+    padding: 5px;
+}
+.faq{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+button{
+    border: none;
+    background-color: unset;
+}
+.faq-text{
+   border-top: 1px solid black;
+    display: none;
+}
+.faq-toggle{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.faq-toggle:active{
+    transform: scale(0.9);
+}
